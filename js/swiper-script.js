@@ -30,7 +30,8 @@ const swiper1 = new Swiper('.swiper1', {
     direction: 'horizontal',
     loop: false,
     slidesPerView: 3,
-    centeredSlides: true, 
+    centeredSlides: true,
+    initialSlide: 1, 
     speed: 400,
   
     pagination: {

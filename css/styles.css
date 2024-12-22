@@ -172,7 +172,8 @@ body{
     background-color: #FDF4E3;
 }
 
-.swiper-pagination2{
+.section-menu-item{
+    transform: scaleY(1.2) 0.3.s;
 }
 
 .section-menu-item-description{
@@ -309,8 +310,7 @@ body{
 }
 
 .icon{
-    display: flex;
-    justify-content: flex-end;
+    float: right;
 }
 
 .address-link{
@@ -326,7 +326,7 @@ body{
 }
 
 .section-gallery__container {
-    width: 1300px;
+    width: 80%;
     height: auto;
     display: grid;
     margin: 40px auto 40px auto;
@@ -343,6 +343,7 @@ body{
 
 .section-gallery__container > div:nth-child(2n) {
     grid-row: span 2;
+    grid-column: span 2;
 }
 
 .section-gallery__container > div:nth-child(3n) {
