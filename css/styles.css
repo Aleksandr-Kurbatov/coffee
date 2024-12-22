@@ -1,0 +1,414 @@
+@font-face {
+    font-display: swap;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/ibm-plex-sans-v19-latin-regular.woff2') format('woff2');
+  }
+
+ul {
+    list-style-type: none; /* Убирает точки */
+    padding-left: 0; /* Убирает отступ слева, если нужно */
+}
+
+html {
+    text-align: center;
+    color: #FDF4E3;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.text-center{
+    text-align: center;
+    color: #FDF4E3;
+    text-decoration: none;
+    font-size: 42px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}   
+
+body{
+    background: linear-gradient(#222222, #442D25);
+}
+
+/*header*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+.header-nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 40px;
+    height: 100px;
+}
+
+.nav-link{
+    color: #FDF4E3;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.nav-item {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+/*hero*/
+/*swiper-banner*/
+
+.swiper-banner {
+    background-size: 200% 200%;
+    background-position: left top;
+    width: 1300px;
+    height: 420px;
+    display: flex;
+    gap: 200px;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    border-radius: 60px;
+  }
+
+  .slide1{
+    background-image: url(../img/Hero.png);
+    background-repeat: no-repeat;
+    
+  }
+
+  .slide2{
+    background-image: url(../img/Hero2.png);
+    background-repeat: no-repeat;
+  }
+
+  .slide3{
+    background-image: url(../img/Hero3.png);
+    background-repeat: no-repeat;
+  }
+
+  .slide4{
+    background-image: url(../img/Hero4.png);
+    background-repeat: no-repeat;
+  }
+
+  .slide-text{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    padding-top: 120px;
+    font-size: 50px;
+  }
+
+  .swiper-pagination-bullet{
+    width: 20px;
+    height: 20px;
+    background-color: transparent; 
+    border: 2px solid white; 
+    border-radius: 50%; 
+    margin: 0 5px; 
+    transition: all 0.3s ease;
+  }
+
+  .swiper-pagination-bullet-active{
+    width: 20px;
+    height: 20px;
+    background-color: #FDF4E3;
+    border-radius: 50%;
+    margin: 0 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+
+.hero-container{
+    width: 1300px;
+    height: 422px;
+    margin-left: 70px;
+    border-radius: 10%;
+}
+
+.section-hero__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+}
+
+/*swiper-slider*/
+/* Стили для всего слайдера */
+
+  
+  
+
+/*menu*/
+.section-menu{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    padding-top: 40px;
+}
+
+.section-menu-list{
+    display: flex;
+    justify-content: space-between;
+    margin: auto auto 40px auto;
+    gap: 20px;
+}
+
+.section-menu-item{
+    width: fit-content;
+    height: fit-content;
+    max-width: 360px;
+    flex: 1 1 25%;
+    outline: 3px solid #442D25;
+    border-radius: 20px;
+    color: #442D25;
+    background-color: #FDF4E3;
+}
+
+.swiper-pagination2{
+}
+
+.section-menu-item-description{
+    text-align: left;
+}
+
+.card-description{
+    display: none;
+}
+
+.card-description-active{
+    display: block;
+}
+
+.item-desc{
+    margin: 20px;
+    text-align: left;
+}
+.item-lower-desc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link-to-menu *{
+    display: inline-block;
+}
+
+.link-to-menu{
+    text-decoration: none;
+    color: #000000; 
+}
+.item-price{
+    display: inline-block;
+    float: right;
+}
+
+/*about */
+.section-about__container{
+    margin-top: -500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 1300px;
+}
+
+
+.section-about_desc{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-size: 32px;
+    padding-bottom: 40px;
+}
+
+.heart{
+    margin: 20px;
+}
+
+.grid-container {
+    display: grid; /* Включаем Grid */
+    grid-template-columns: 1fr 1fr;  /*Две равные колонки */
+    grid-template-rows: auto auto; /* Автоматическая высота строк */
+    gap: 60px; /* Расстояние между карточками */
+    max-width: 1300px;
+    margin: 0 auto;
+
+}
+
+.card1 {
+    height: 500px; /* Фиксированная высота */
+    border-radius: 40px;
+    background: url("../img/about1.png");
+    background-size: cover; /* Картинка полностью покрывает блок */
+    background-position: center; /* Центрируем картинку */
+    background-repeat: no-repeat; /* Избегаем повторения */
+
+}
+
+.card2 {
+    height: 500px; 
+    background: url("../img/about2.png");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.card-large {
+    height: 500px; 
+    width: 100%;
+    background: url("../img/about3.png");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    grid-column: 1 / span 2;
+    border-radius: 40px; 
+}
+
+.text-card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 32px;
+}
+
+.text-card_adress{
+    margin-bottom: 30px;
+}
+
+.text-card__open {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 200px;
+    margin-left: 30px;
+    padding-right: 32px;
+    font-size: 48px;
+}
+
+
+.text-card__open span {
+    display: inline-block;
+}
+
+.text-card__open svg {
+    display: inline-block;
+
+    
+}
+
+.icon{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.address-link{
+    display: flex;
+    position: relative;
+    align-items: end;
+}
+
+/*gallery*/
+
+.section-gallery{
+    margin-top: ;
+}
+
+.section-gallery__container {
+    width: 1300px;
+    height: auto;
+    display: grid;
+    margin: 40px auto 40px auto;
+    grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
+    grid-auto-rows: 240px;
+    grid-auto-flow: dense;
+    grid-gap: 15px;
+}
+
+.section-gallery__container > div {
+    background-size: cover;
+    background-position: center;
+}
+
+.section-gallery__container > div:nth-child(2n) {
+    grid-row: span 2;
+}
+
+.section-gallery__container > div:nth-child(3n) {
+    grid-column: span 3;
+}
+
+.gallery-image1 {
+    background: url("../img/gallery-1.png");
+}
+
+.gallery-image2 {
+    background: url("../img/gallery-2.png");
+}
+
+.gallery-image3 {
+    background: url("../img/gallery-3.png");
+}
+
+.gallery-image4 {
+    background: url("../img/gallery-4.png");
+}
+
+.gallery-image5 {
+    background: url("../img/gallery-5.png");
+}
+
+.gallery-image6 {
+    background: url("../img/gallery-6.png");
+}
+
+
+
+/*footer*/
+
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.footer-left{
+    width: 204px;
+    height: 50px;
+    margin-left: 83px;
+}
+
+.footer-nav{
+    display: flex;
+    align-items: center;
+}
+
+.footer-social-list{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 10px;
+}
+
+.footer-contacts-list{
+
+    height: 100px;
+    width: 400px;
+    margin-right: 50px;
+    text-align: left;
+    font-size: 15px;
+    white-space: nowrap;
+    line-height: 1.5;
+}

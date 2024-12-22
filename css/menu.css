@@ -1,0 +1,19 @@
+.title-text{
+    text-align: left;
+    color: #FDF4E3;
+    text-decoration: none;
+    font-size: 42px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.button{
+    width: 320px;
+    height: 60px;
+    border-radius: 25px;
+    background-color: #FDF4E3;
+    border-color: #FDF4E3;
+    border-style: solid;
+}
